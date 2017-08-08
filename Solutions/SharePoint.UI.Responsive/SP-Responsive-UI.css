@@ -16,6 +16,12 @@
     min-width: auto;
 }
 
+/* Enterprise Search Center - Begin */
+#SearchBox{
+/*	background-color: lime;*/
+}
+
+/* Enterprise Search Center - End */
 
 /* Make sure dialog windows don't break */
 
@@ -470,6 +476,126 @@
 /* Smartphones */
 
 @media screen and (max-width: 480px) {
+	/* Enterprise Search Center - Begin */
+	/*
+		TODO - Can I collapse the Verticals? aka Search Navigation (not the refiners)
+		TODO - What to do with the Refiners
+		TODO - Can I globally override the hover cards
+		TODO - Preview Images
+		
+	*/
+	/* Search Default Page */
+	div.ms-searchCenter-main{
+		width:100%;
+	}
+	div.ms-searchCenter > div > div.ms-fullWidth{
+		width:90%;
+	}
+	div.ms-searchCenter .ms-srch-sbLarge-fullWidth{
+		width: 85%;
+	}
+	div.ms-srch-sbLarge{
+		width: 100%;
+	}
+	div#SearchBox{
+		/*background-color: red;*/
+/*		width:100%;*/
+		margin-left: 5%;
+	}
+	/* Search Default Page - End */
+	/* Search Results Page - Begin */
+	div.ms-searchCenter-result-main{
+	
+		/*width: 350px;*/
+	}
+	div.ms-searchCenter-result-main > div.ms-fullWidth{
+/*		width:350px; 
+		background-color: lime;*/
+	}
+	
+	/* Play with these with caution...they ARE the search box. */
+	div#SearchBox input{
+		width: 85%; 
+	}
+	div#SearchBox .ms-srch-sbLarge{
+		width:350px;
+		/*width:100%;*/
+		width:400px;
+	}
+	/* End - Play with these with caution...they ARE the search box. */
+
+	div#Result{
+/*		width:95%;*/
+	}
+	
+	div.ms-searchCenter-result-main > div.ms-webpart-zone{
+	
+	}
+	
+	/* Result Web Part Body Style */
+	.ms-WPBody > div {
+/*		width:400px;	*/
+	}
+	div#UpScopeLinkTop{
+		width:100% !important; /*I hate myself, but there is an inlime style of 500px*/
+	}
+
+	/* Begin - Item Result*/
+	div.ms-srch-item, div.ms-srch-item-summary{
+		margin-left:10px;
+		width: 400px;
+	}
+	/* Preview Container */
+	div.ms-srch-item-previewContainer, img.ms-srch-item-preview{
+		width:300px;
+		float:none;
+	}
+	img.ms-srch-item-preview{
+		max-width:300px;
+		max-height:300px;
+	}
+
+	/* End - Item Result*/
+	/* Begin - People Item Result*/
+	.ms-srch-people-item #UserInfoContainer{
+		width: 300px;
+	}
+	div.ms-srch-people-outerContainer{
+		width:400px;
+	}
+	div.ms-srch-people-item{
+		width:100%;
+	
+	}
+	/* End - People Item Result*/
+	
+	/* Start - Hide Results Page Container*/
+	/*
+	ul#Paging{
+		display:none;
+	}
+	div.ms-srch-resultFooter {
+		display:none;
+	}
+	div.ms-srchnav {
+		display:none;
+	}
+	div.ms-srch-item{
+		display:none;
+	}
+	*/
+	/* End - Hide Results Page Container*/
+
+
+	/* Search Results Page - End */
+	/* Enterprise Search Center - End */
+
+
+
+/********************************************************************/
+
+
+
     div#s4-bodyContainer {
         width: auto !important;
         margin-left: 10px;
